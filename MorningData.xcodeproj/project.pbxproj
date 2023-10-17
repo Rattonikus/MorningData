@@ -19,6 +19,7 @@
 		7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD212ADED52000263E37 /* BucketListItemView.swift */; };
 		7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD232ADED6ED00263E37 /* BucketListItem.swift */; };
 		7850FD262ADED97F00263E37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD252ADED97F00263E37 /* Utilities.swift */; };
+		7850FD282ADEE0C300263E37 /* carsClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD272ADEE0C300263E37 /* carsClean.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7850FD212ADED52000263E37 /* BucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItemView.swift; sourceTree = "<group>"; };
 		7850FD232ADED6ED00263E37 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		7850FD252ADED97F00263E37 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7850FD272ADEE0C300263E37 /* carsClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsClean.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		7850FD1C2ADED14B00263E37 /* Raw Data */ = {
 			isa = PBXGroup;
 			children = (
+				7850FD272ADEE0C300263E37 /* carsClean.json */,
 				7850FD1D2ADED2EA00263E37 /* buckets2023.json */,
 			);
 			path = "Raw Data";
@@ -288,6 +291,7 @@
 			files = (
 				7850FCF62ADECEFC00263E37 /* Preview Assets.xcassets in Resources */,
 				7850FCF32ADECEFC00263E37 /* Assets.xcassets in Resources */,
+				7850FD282ADEE0C300263E37 /* carsClean.json in Resources */,
 				7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */,
 				7850FD202ADED2F200263E37 /* What is random.pdf in Resources */,
 			);
