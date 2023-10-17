@@ -14,6 +14,8 @@
 		7850FD002ADECEFD00263E37 /* MorningDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FCFF2ADECEFD00263E37 /* MorningDataTests.swift */; };
 		7850FD0A2ADECEFD00263E37 /* MorningDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD092ADECEFD00263E37 /* MorningDataUITests.swift */; };
 		7850FD0C2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */; };
+		7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1D2ADED2EA00263E37 /* buckets2023.json */; };
+		7850FD202ADED2F200263E37 /* What is random.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1F2ADED2F200263E37 /* What is random.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		7850FD052ADECEFD00263E37 /* MorningDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorningDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7850FD092ADECEFD00263E37 /* MorningDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataUITests.swift; sourceTree = "<group>"; };
 		7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7850FD1D2ADED2EA00263E37 /* buckets2023.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buckets2023.json; sourceTree = "<group>"; };
+		7850FD1F2ADED2F200263E37 /* What is random.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "What is random.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		7850FD182ADECF3F00263E37 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7850FD1C2ADED14B00263E37 /* Raw Data */,
+				7850FD1B2ADED14000263E37 /* PDFs */,
 				7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */,
 				7850FCF22ADECEFC00263E37 /* Assets.xcassets */,
 			);
@@ -149,6 +155,22 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7850FD1B2ADED14000263E37 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				7850FD1F2ADED2F200263E37 /* What is random.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
+		7850FD1C2ADED14B00263E37 /* Raw Data */ = {
+			isa = PBXGroup;
+			children = (
+				7850FD1D2ADED2EA00263E37 /* buckets2023.json */,
+			);
+			path = "Raw Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +279,8 @@
 			files = (
 				7850FCF62ADECEFC00263E37 /* Preview Assets.xcassets in Resources */,
 				7850FCF32ADECEFC00263E37 /* Assets.xcassets in Resources */,
+				7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */,
+				7850FD202ADED2F200263E37 /* What is random.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

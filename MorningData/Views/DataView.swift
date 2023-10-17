@@ -22,7 +22,7 @@ struct DataView: View
     }
 }
 
-#Preview 
+#Preview ("Data View")
 {
     DataView()
 }
