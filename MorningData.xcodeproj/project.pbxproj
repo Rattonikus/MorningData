@@ -16,6 +16,8 @@
 		7850FD0C2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */; };
 		7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1D2ADED2EA00263E37 /* buckets2023.json */; };
 		7850FD202ADED2F200263E37 /* What is random.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1F2ADED2F200263E37 /* What is random.pdf */; };
+		7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD212ADED52000263E37 /* BucketListItemView.swift */; };
+		7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD232ADED6ED00263E37 /* BucketListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7850FD1D2ADED2EA00263E37 /* buckets2023.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buckets2023.json; sourceTree = "<group>"; };
 		7850FD1F2ADED2F200263E37 /* What is random.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "What is random.pdf"; sourceTree = "<group>"; };
+		7850FD212ADED52000263E37 /* BucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItemView.swift; sourceTree = "<group>"; };
+		7850FD232ADED6ED00263E37 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				7850FCF02ADECEFB00263E37 /* DataView.swift */,
+				7850FD212ADED52000263E37 /* BucketListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 		7850FD1A2ADECF5B00263E37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7850FD232ADED6ED00263E37 /* BucketListItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
 				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
+				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
