@@ -18,6 +18,7 @@
 		7850FD202ADED2F200263E37 /* What is random.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1F2ADED2F200263E37 /* What is random.pdf */; };
 		7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD212ADED52000263E37 /* BucketListItemView.swift */; };
 		7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD232ADED6ED00263E37 /* BucketListItem.swift */; };
+		7850FD262ADED97F00263E37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD252ADED97F00263E37 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		7850FD1F2ADED2F200263E37 /* What is random.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "What is random.pdf"; sourceTree = "<group>"; };
 		7850FD212ADED52000263E37 /* BucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItemView.swift; sourceTree = "<group>"; };
 		7850FD232ADED6ED00263E37 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
+		7850FD252ADED97F00263E37 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				7850FD1B2ADED14000263E37 /* PDFs */,
 				7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */,
 				7850FCF22ADECEFC00263E37 /* Assets.xcassets */,
+				7850FD252ADED97F00263E37 /* Utilities.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
 				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
+				7850FD262ADED97F00263E37 /* Utilities.swift in Sources */,
 				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
