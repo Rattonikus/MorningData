@@ -7,12 +7,46 @@
 
 import SwiftUI
 
-struct AddBucketListItemView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct AddBucketListItemView: View 
+{
+    @Environment(\.dismiss) var dismiss
+    @EnvironmentObject var storedBuckets : BucketDataStore
+    @State private var author : String = ""
+    @State private var bucketListItem : String = ""
+    
+    
+    init (with author : String, having item : String)
+    {
+        _author = State(initialValue: author)
+        _bucketListItem = State(initialValue: item)
+    }
+    
+    var body: some View
+    {
+        Form
+        {
+            Section("Make a new bucket list item")
+            {
+                InputField(title: "Creature who made it", hint: "Creature", result: $author)
+                InputField(title: "Goal", hint: "WHat do you wanna do?", result: $bucketListItem)
+            }
+            if (!author.isEmpty && !bucketListItem.isEmpty)
+            {
+                Button("add me to list", action: addBucketListItemToDataStore)
+            }
+        }
+    }
+    
+    private func addBucketListItemToDataStore() -> Void
+    {
+        let year = Calendar.current.component(.year, from: Date())
+        let newBucketListItem = BucketListItem(year: year, goal: bucketListItem, creature: author)
+        storedBuckets.buckets.insert(newBucketListItem, at: 0)
+        dismiss()
     }
 }
 
-#Preview {
-    AddBucketListItemView()
+#Preview ("Add a bucket list item")
+{
+    AddBucketListItemView(with : "", having: "")
 }
