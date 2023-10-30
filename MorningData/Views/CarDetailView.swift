@@ -1,5 +1,5 @@
 //
-//  BucketRowView.swift
+//  CarDetailView.swift
 //  MorningData
 //
 //  Created by Elkins, Cameron on 10/30/23.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct BucketRowView: View 
+struct CarDetailView: View
 {
-    var rowBucket : BucketListItem
+    var rowCar : CarItem
     var emoji : String
     var body: some View
     {
@@ -21,15 +21,14 @@ struct BucketRowView: View
            
             VStack
             {
-                Text("Year: \(String (rowBucket .year))")
-                Text(rowBucket.creature)
+                Text("Year: \(String (rowCar.Model))")
+                Text(rowCar.Make)
             }
             
         }
     }
 }
 
-#Preview ("Bucket Row")
-{
-    BucketRowView(rowBucket: demoBucket, emoji: generateRandomEmoji(of: ""))
+#Preview {
+    CarDetailView(rowCar : demoCar, emoji: generateRandomEmoji(of: ""))
 }

@@ -23,6 +23,9 @@
 		7850FD2C2ADEE43F00263E37 /* carsClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD2B2ADEE43F00263E37 /* carsClean.json */; };
 		78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */; };
 		78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */; };
+		78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */; };
+		78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */; };
+		78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		7850FD2B2ADEE43F00263E37 /* carsClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsClean.json; sourceTree = "<group>"; };
 		78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
 		78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
+		78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
+		78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
+		78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,9 +166,12 @@
 		7850FD192ADECF5100263E37 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */,
 				7850FCF02ADECEFB00263E37 /* DataView.swift */,
 				7850FD212ADED52000263E37 /* BucketListItemView.swift */,
 				78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */,
+				78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */,
+				78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
+				78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */,
 				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
 				78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */,
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
@@ -335,6 +345,8 @@
 				7850FD262ADED97F00263E37 /* Utilities.swift in Sources */,
 				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
 				78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */,
+				78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */,
+				78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

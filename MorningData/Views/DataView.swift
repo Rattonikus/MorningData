@@ -53,12 +53,14 @@ struct DataView: View
                         }
                         .onDelete(perform: removeBucketItems)
                     }
+                    
                 }
-                .searchable(text: $searchedText)
+                
             }
 
-          
+            
         }
+        .searchable(text: $searchedText)
         .padding()
     }
     

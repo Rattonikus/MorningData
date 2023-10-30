@@ -8,6 +8,9 @@
 import Foundation
 
 let demoBucket : BucketListItem = BucketListItem(year: 2132, goal: "Eat the humans", creature: "Xenomorph")
+let demoCar : CarItem = CarItem(EngineType: "Manual", MPG: 2, FuelType: "Normal", Classification: "Epic", Make: "Mord Fustang", Model: "Yes", Year: 2)
+
+
 
 func loadJSON (from file : String) -> [BucketListItem]
 {
