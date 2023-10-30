@@ -15,3 +15,5 @@ class BucketDataStore: ObservableObject
         self.buckets = buckets
     }
 }
+
+let definitionBrochure = Bundle.main.url(forResource: "whatisrandom", withExtension: "pdf")!

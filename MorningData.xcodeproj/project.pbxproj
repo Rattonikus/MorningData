@@ -15,7 +15,6 @@
 		7850FD0A2ADECEFD00263E37 /* MorningDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD092ADECEFD00263E37 /* MorningDataUITests.swift */; };
 		7850FD0C2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */; };
 		7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1D2ADED2EA00263E37 /* buckets2023.json */; };
-		7850FD202ADED2F200263E37 /* What is random.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD1F2ADED2F200263E37 /* What is random.pdf */; };
 		7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD212ADED52000263E37 /* BucketListItemView.swift */; };
 		7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD232ADED6ED00263E37 /* BucketListItem.swift */; };
 		7850FD262ADED97F00263E37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD252ADED97F00263E37 /* Utilities.swift */; };
@@ -26,6 +25,8 @@
 		78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */; };
 		78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */; };
 		78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */; };
+		78DF2D8A2AEFF79F00FF6EB8 /* whatisrandom.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78DF2D892AEFF79F00FF6EB8 /* whatisrandom.pdf */; };
+		78DF2D8C2AEFF9A600FF6EB8 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +58,6 @@
 		7850FD092ADECEFD00263E37 /* MorningDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataUITests.swift; sourceTree = "<group>"; };
 		7850FD0B2ADECEFD00263E37 /* MorningDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7850FD1D2ADED2EA00263E37 /* buckets2023.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = buckets2023.json; sourceTree = "<group>"; };
-		7850FD1F2ADED2F200263E37 /* What is random.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "What is random.pdf"; sourceTree = "<group>"; };
 		7850FD212ADED52000263E37 /* BucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItemView.swift; sourceTree = "<group>"; };
 		7850FD232ADED6ED00263E37 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		7850FD252ADED97F00263E37 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
 		78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailView.swift; sourceTree = "<group>"; };
 		78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRowView.swift; sourceTree = "<group>"; };
+		78DF2D892AEFF79F00FF6EB8 /* whatisrandom.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = whatisrandom.pdf; sourceTree = "<group>"; };
+		78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				7850FD1C2ADED14B00263E37 /* Raw Data */,
 				7850FD1B2ADED14000263E37 /* PDFs */,
+				78DF2D892AEFF79F00FF6EB8 /* whatisrandom.pdf */,
 				7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */,
 				7850FD252ADED97F00263E37 /* Utilities.swift */,
 				7850FCF22ADECEFC00263E37 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */,
 				78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */,
 				78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */,
+				78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,7 +193,6 @@
 		7850FD1B2ADED14000263E37 /* PDFs */ = {
 			isa = PBXGroup;
 			children = (
-				7850FD1F2ADED2F200263E37 /* What is random.pdf */,
 			);
 			path = PDFs;
 			sourceTree = "<group>";
@@ -309,9 +312,9 @@
 			files = (
 				7850FCF62ADECEFC00263E37 /* Preview Assets.xcassets in Resources */,
 				7850FCF32ADECEFC00263E37 /* Assets.xcassets in Resources */,
+				78DF2D8A2AEFF79F00FF6EB8 /* whatisrandom.pdf in Resources */,
 				7850FD2C2ADEE43F00263E37 /* carsClean.json in Resources */,
 				7850FD1E2ADED2EA00263E37 /* buckets2023.json in Resources */,
-				7850FD202ADED2F200263E37 /* What is random.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +350,7 @@
 				78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */,
 				78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */,
 				78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */,
+				78DF2D8C2AEFF9A600FF6EB8 /* InputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
