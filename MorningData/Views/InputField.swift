@@ -9,13 +9,22 @@ import SwiftUI
 
 struct InputField: View 
 {
-    var body: some View 
+    let title : String
+    let hint : String
+    
+    @Binding var result : String
+    
+    var body: some View
     {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            .font(.headline)
+            .multilineTextAlignment(.leading)
+        TextField(hint, text: $result)
+            .autocorrectionDisabled()
     }
 }
 
 #Preview ("Input Field Demo")
 {
-    InputField()
+    InputField(title: "the title", hint: "the hint", result: .constant("The bound value"))
 }

@@ -27,6 +27,7 @@
 		78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */; };
 		78DF2D8A2AEFF79F00FF6EB8 /* whatisrandom.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 78DF2D892AEFF79F00FF6EB8 /* whatisrandom.pdf */; };
 		78DF2D8C2AEFF9A600FF6EB8 /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */; };
+		78DF2D8E2AEFFC7300FF6EB8 /* AddBucketListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D8D2AEFFC7300FF6EB8 /* AddBucketListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRowView.swift; sourceTree = "<group>"; };
 		78DF2D892AEFF79F00FF6EB8 /* whatisrandom.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = whatisrandom.pdf; sourceTree = "<group>"; };
 		78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		78DF2D8D2AEFFC7300FF6EB8 /* AddBucketListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */,
 				78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */,
 				78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */,
+				78DF2D8D2AEFFC7300FF6EB8 /* AddBucketListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
+				78DF2D8E2AEFFC7300FF6EB8 /* AddBucketListItemView.swift in Sources */,
 				78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */,
 				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
 				78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */,
