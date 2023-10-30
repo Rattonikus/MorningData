@@ -21,6 +21,8 @@
 		7850FD262ADED97F00263E37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD252ADED97F00263E37 /* Utilities.swift */; };
 		7850FD2A2ADEE3D700263E37 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD292ADEE3D700263E37 /* CarItem.swift */; };
 		7850FD2C2ADEE43F00263E37 /* carsClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD2B2ADEE43F00263E37 /* carsClean.json */; };
+		78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */; };
+		78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		7850FD252ADED97F00263E37 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7850FD292ADEE3D700263E37 /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
 		7850FD2B2ADEE43F00263E37 /* carsClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsClean.json; sourceTree = "<group>"; };
+		78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
+		78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,8 +151,8 @@
 				7850FD1C2ADED14B00263E37 /* Raw Data */,
 				7850FD1B2ADED14000263E37 /* PDFs */,
 				7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */,
-				7850FCF22ADECEFC00263E37 /* Assets.xcassets */,
 				7850FD252ADED97F00263E37 /* Utilities.swift */,
+				7850FCF22ADECEFC00263E37 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,6 +162,7 @@
 			children = (
 				7850FCF02ADECEFB00263E37 /* DataView.swift */,
 				7850FD212ADED52000263E37 /* BucketListItemView.swift */,
+				78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			children = (
 				7850FD232ADED6ED00263E37 /* BucketListItem.swift */,
 				7850FD292ADEE3D700263E37 /* CarItem.swift */,
+				78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,10 +329,12 @@
 			files = (
 				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
 				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
+				78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */,
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
 				7850FD2A2ADEE3D700263E37 /* CarItem.swift in Sources */,
 				7850FD262ADED97F00263E37 /* Utilities.swift in Sources */,
 				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
+				78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
