@@ -27,8 +27,8 @@ struct AddBucketListItemView: View
         {
             Section("Make a new bucket list item")
             {
-                InputField(title: "Creature who made it", hint: "Creature", result: $author)
-                InputField(title: "Goal", hint: "WHat do you wanna do?", result: $bucketListItem)
+                InputField(title: "Who made it", hint: "Creature", result: $author)
+                InputField(title: "Goal", hint: "What do you wanna do?", result: $bucketListItem)
             }
             if (!author.isEmpty && !bucketListItem.isEmpty)
             {

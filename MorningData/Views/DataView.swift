@@ -11,7 +11,10 @@ struct DataView: View
 {
     @ObservedObject var bucketData = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
     
+    @ObservedObject var carData = CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem])
+    
     @State private var searchedText : String = ""
+    @State private var showAddBucketListItems : Bool = false
     
     private var filteredBucketListResult : [BucketListItem]
     {
@@ -38,9 +41,6 @@ struct DataView: View
     {
         NavigationStack
         {
-            
-            VStack 
-            {
                 List
                 {
                     Section("Buckets")
@@ -55,12 +55,24 @@ struct DataView: View
                     }
                     
                 }
-                
+                .searchable(text: $searchedText)
+                .navigationTitle("Data and Information")
+                .toolbar
+            {
+               
+                ToolbarItem(placement: .topBarLeading)
+                {
+                    EditButton()
+                }
+                ToolbarItem(placement: .topBarTrailing)
+                {
+                    Button (action: {self.showAddBucketListItems.toggle()})
+                    {
+                        Image(systemName: "plus")
+                    }
+                }
             }
-
-            
         }
-        .searchable(text: $searchedText)
         .padding()
     }
     
