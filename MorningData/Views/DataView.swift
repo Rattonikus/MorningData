@@ -10,12 +10,13 @@ import SwiftUI
 struct DataView: View
 {
     @EnvironmentObject var bucketData : BucketDataStore
-    @State var secretnum : Int = 0
-    
     @ObservedObject var carData = CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem])
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItems : Bool = false
+    
+    @State private var sec1 : Int = 0
+    @State private var sec2 : Bool = false
     
     private var filteredBucketListResult : [BucketListItem]
     {
@@ -42,25 +43,29 @@ struct DataView: View
     {
         NavigationStack
         {
-                List
-                {
-                    Section("Buckets")
-                    {
-                        ForEach(bucketData.buckets)
-                        {
-                            bucket in
-                            
-                            BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "Face"))
-                        }
-                        .onDelete(perform: removeBucketItems)
-                    }
-                    
-                }
-                .searchable(text: $searchedText)
-                .navigationTitle("Data and Information")
-                .toolbar
+            List
             {
-               
+                Section("Buckets")
+                {
+                    ForEach(filteredBucketListResult)
+                    {
+                        bucket in
+                        
+                        BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "Face"))
+                    }
+                    .onDelete(perform: removeBucketItems)
+                }
+                Section("Unfinished")
+                {
+                    Button("Testt", action: sec3)
+                }
+                
+            }
+            .searchable(text: $searchedText)
+            .navigationTitle("Data and Information")
+            .toolbar
+            {
+                
                 ToolbarItem(placement: .topBarLeading)
                 {
                     EditButton()
@@ -78,13 +83,33 @@ struct DataView: View
         {
             AddBucketListItemView(with: "Your name", having: "your goal")
         }
+        .sheet(isPresented: $sec2)
+        {
+            colorChangeView()
+        }
     }
     
     private func removeBucketItems(at offsets : IndexSet) -> Void
     {
         bucketData.buckets.remove(atOffsets: offsets)
     }
+    
+    private func sec3()
+    {
+        sec1 += 1
+        if sec1 == 10
+        {
+            sec2 = true
+        }
+        else
+        {
+            sec2 = false
+        }
+    }
+    
 }
+
+
 
 #Preview ("Data View")
 {

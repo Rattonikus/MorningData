@@ -22,6 +22,19 @@ class BucketDataStore: ObservableObject
     }
     init(buckets: [BucketListItem] = [])
     {
+        if let storedOnDevice = UserDefaults.standard.data(forKey: "Saved Buckets")
+        {
+            let decoder = JSONDecoder()
+            if let savedBuckets = try? decoder.decode([BucketListItem].self, from: storedOnDevice)
+            {
+                if (buckets.count < 20)
+                {
+                    self.buckets = savedBuckets
+                    return
+                }
+            }
+        }
+  
         self.buckets = buckets
     }
 }
