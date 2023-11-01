@@ -7,12 +7,29 @@
 
 import SwiftUI
 
-struct CarRowView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct CarRowView: View 
+{
+    var rowCar : CarItem
+    var emoji : String
+    var body: some View
+    {
+        HStack
+        {
+          
+            Text(emoji)
+                .font (.largeTitle)
+           
+            VStack
+            {
+                Text("Year: \(String (rowCar.Year))")
+                Text(rowCar.Make)
+            }
+            
+        }
     }
 }
 
-#Preview {
-    CarRowView()
+#Preview 
+{
+    CarRowView(rowCar: demoCar, emoji: generateRandomEmoji(of: ""))
 }

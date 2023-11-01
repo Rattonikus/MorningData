@@ -14,6 +14,8 @@ struct DataView: View
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItems : Bool = false
+    @State private var canShowBuckets : Bool = false
+    @State private var canShowCar : Bool = false
     
     @State private var sec1 : Int = 0
     @State private var sec2 : Bool = false
@@ -39,13 +41,14 @@ struct DataView: View
     }
     
     
+    
     var body: some View
     {
         NavigationStack
         {
             List
             {
-                Section("Buckets")
+                Section("Buckets", isExpanded: $canShowBuckets)
                 {
                     ForEach(filteredBucketListResult)
                     {
@@ -54,6 +57,17 @@ struct DataView: View
                         BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: "Face"))
                     }
                     .onDelete(perform: removeBucketItems)
+                }
+                Section("Cars", isExpanded: $canShowCar)
+                {
+                    ForEach(carData.cars.indices, id: \.self)
+                    {
+                        index in
+                        
+                        CarRowView(rowCar: carData.cars[index], emoji: generateRandomEmoji(of: "Face"))
+                    }
+
+                    
                 }
                 Section("Unfinished")
                 {
