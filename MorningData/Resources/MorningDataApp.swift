@@ -12,9 +12,11 @@ struct MorningDataApp: App
 {
     var body: some Scene 
     {
-        WindowGroup 
+        @State var storedBuckets = BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem])
+        WindowGroup
         {
             DataView()
+                .environmentObject(storedBuckets)
         }
     }
 }
