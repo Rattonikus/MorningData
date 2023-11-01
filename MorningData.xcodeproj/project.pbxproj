@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		783F01B52AF28E95002FCD34 /* CarItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F01B42AF28E95002FCD34 /* CarItemStore.swift */; };
+		783F01B72AF29734002FCD34 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F01B62AF29734002FCD34 /* DataView.swift */; };
+		783F01B92AF29957002FCD34 /* Colorlol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F01B82AF29957002FCD34 /* Colorlol.swift */; };
 		7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */; };
-		7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FCF02ADECEFB00263E37 /* DataView.swift */; };
 		7850FCF32ADECEFC00263E37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7850FCF22ADECEFC00263E37 /* Assets.xcassets */; };
 		7850FCF62ADECEFC00263E37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7850FCF52ADECEFC00263E37 /* Preview Assets.xcassets */; };
 		7850FD002ADECEFD00263E37 /* MorningDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FCFF2ADECEFD00263E37 /* MorningDataTests.swift */; };
@@ -50,9 +51,10 @@
 
 /* Begin PBXFileReference section */
 		783F01B42AF28E95002FCD34 /* CarItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItemStore.swift; sourceTree = "<group>"; };
+		783F01B62AF29734002FCD34 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		783F01B82AF29957002FCD34 /* Colorlol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorlol.swift; sourceTree = "<group>"; };
 		7850FCEB2ADECEFB00263E37 /* MorningData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorningData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7850FCEE2ADECEFB00263E37 /* MorningDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningDataApp.swift; sourceTree = "<group>"; };
-		7850FCF02ADECEFB00263E37 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		7850FCF22ADECEFC00263E37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7850FCF52ADECEFC00263E37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7850FCFB2ADECEFD00263E37 /* MorningDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorningDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,13 +176,14 @@
 			isa = PBXGroup;
 			children = (
 				78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */,
-				7850FCF02ADECEFB00263E37 /* DataView.swift */,
 				7850FD212ADED52000263E37 /* BucketListItemView.swift */,
 				78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */,
 				78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */,
 				78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */,
 				78DF2D8B2AEFF9A600FF6EB8 /* InputField.swift */,
 				78DF2D8D2AEFFC7300FF6EB8 /* AddBucketListItemView.swift */,
+				783F01B62AF29734002FCD34 /* DataView.swift */,
+				783F01B82AF29957002FCD34 /* Colorlol.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,14 +351,15 @@
 				7850FD222ADED52000263E37 /* BucketListItemView.swift in Sources */,
 				78DF2D8E2AEFFC7300FF6EB8 /* AddBucketListItemView.swift in Sources */,
 				78DF2D862AEFF35A00FF6EB8 /* CarRowView.swift in Sources */,
-				7850FCF12ADECEFB00263E37 /* DataView.swift in Sources */,
 				78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */,
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
 				7850FD2A2ADEE3D700263E37 /* CarItem.swift in Sources */,
 				7850FD262ADED97F00263E37 /* Utilities.swift in Sources */,
 				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
 				78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */,
+				783F01B92AF29957002FCD34 /* Colorlol.swift in Sources */,
 				78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */,
+				783F01B72AF29734002FCD34 /* DataView.swift in Sources */,
 				78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */,
 				78DF2D8C2AEFF9A600FF6EB8 /* InputField.swift in Sources */,
 				783F01B52AF28E95002FCD34 /* CarItemStore.swift in Sources */,

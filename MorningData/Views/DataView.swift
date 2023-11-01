@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct DataView: View 
+struct DataView: View
 {
     @EnvironmentObject var bucketData : BucketDataStore
+    @State var secretnum : Int = 0
     
     @ObservedObject var carData = CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem])
     
@@ -88,4 +89,5 @@ struct DataView: View
 #Preview ("Data View")
 {
     DataView()
+        .environmentObject(BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem]))
 }
