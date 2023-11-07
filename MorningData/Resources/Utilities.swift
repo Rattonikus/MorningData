@@ -12,7 +12,7 @@ let demoCar : CarItem = CarItem(EngineType: "Manual", MPG: 2, FuelType: "Normal"
 
 
 
-func loadJSON (from file : String) -> [BucketListItem]
+func loadBucketJSON (from file : String) -> [BucketListItem]
 {
     do
     {
@@ -22,6 +22,27 @@ func loadJSON (from file : String) -> [BucketListItem]
             let decoder = JSONDecoder()
             
             let results = try decoder.decode([BucketListItem].self, from: data)
+            return results
+        }
+    }
+    catch
+    {
+        print(error.localizedDescription)
+    }
+    return [] //badbadbad
+    
+}
+
+func loadJSON (from file : String) -> [CarItem]
+{
+    do
+    {
+        if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
+        {
+            let data = try! Data(contentsOf: dataSourceURL)
+            let decoder = JSONDecoder()
+            
+            let results = try decoder.decode([CarItem].self, from: data)
             return results
         }
     }

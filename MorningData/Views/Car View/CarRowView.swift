@@ -29,7 +29,7 @@ struct CarRowView: View
     }
 }
 
-#Preview 
+#Preview ("Car row")
 {
     CarRowView(rowCar: demoCar, emoji: generateRandomEmoji(of: ""))
 }

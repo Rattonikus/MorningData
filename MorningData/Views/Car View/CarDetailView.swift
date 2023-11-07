@@ -9,26 +9,17 @@ import SwiftUI
 
 struct CarDetailView: View
 {
-    var rowCar : CarItem
-    var emoji : String
     var body: some View
     {
-        HStack
+        VStack
         {
-          
-            Text(emoji)
-                .font (.largeTitle)
-           
-            VStack
-            {
-                Text("Year: \(String (rowCar.Model))")
-                Text(rowCar.Make)
-            }
-            
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Placeholder")
+            Image("TF2Bucket")
         }
     }
 }
 
 #Preview {
-    CarDetailView(rowCar : demoCar, emoji: generateRandomEmoji(of: ""))
+    CarDetailView()
 }

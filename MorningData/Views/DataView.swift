@@ -10,15 +10,12 @@ import SwiftUI
 struct DataView: View
 {
     @EnvironmentObject var bucketData : BucketDataStore
-    @ObservedObject var carData = CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem])
+    @EnvironmentObject var carData : CarItemStore
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItems : Bool = false
     @State private var canShowBuckets : Bool = false
     @State private var canShowCar : Bool = false
-    
-    @State private var sec1 : Int = 0
-    @State private var sec2 : Bool = false
     
     private var filteredBucketListResult : [BucketListItem]
     {
@@ -35,6 +32,27 @@ struct DataView: View
                 $0.creature.lowercased().contains(searchedText.lowercased())
                 ||
                 String($0.year) == searchedText
+            }
+        }
+        
+    }
+    
+    
+    private var filteredCarResult : [CarItem]
+    {
+        if(searchedText.isEmpty)
+        {
+             return carData.cars
+        }
+        else
+        {
+            return carData.cars.filter
+            {
+                $0.Model.lowercased().contains(searchedText.lowercased())
+                ||
+                $0.Make.lowercased().contains(searchedText.lowercased())
+                ||
+                String($0.Year) == searchedText
             }
         }
         
@@ -65,18 +83,14 @@ struct DataView: View
                 }
                 Section("Cars", isExpanded: $canShowCar)
                 {
-                    ForEach(carData.cars.indices, id: \.self)
+                    ForEach(filteredCarResult)
                     {
-                        index in
+                        car in
                         
-                        CarRowView(rowCar: carData.cars[index], emoji: generateRandomEmoji(of: "Face"))
+                        CarRowView(rowCar: car, emoji: generateRandomEmoji(of: "Face"))
                     }
 
                     
-                }
-                Section("Unfinished")
-                {
-                    Button("Testt", action: sec3)
                 }
                 
             }
@@ -102,10 +116,8 @@ struct DataView: View
         {
             AddBucketListItemView(with: "Your name", having: "your goal")
         }
-        .sheet(isPresented: $sec2)
-        {
-            colorChangeView()
-        }
+
+    
     }
     
     private func removeBucketItems(at offsets : IndexSet) -> Void
@@ -113,18 +125,7 @@ struct DataView: View
         bucketData.buckets.remove(atOffsets: offsets)
     }
     
-    private func sec3()
-    {
-        sec1 += 1
-        if sec1 == 10
-        {
-            sec2 = true
-        }
-        else
-        {
-            sec2 = false
-        }
-    }
+    
     private func showCar()
     {
         canShowCar.toggle()
@@ -141,5 +142,6 @@ struct DataView: View
 #Preview ("Data View")
 {
     DataView()
-        .environmentObject(BucketDataStore(buckets: loadJSON(from: "buckets2023") as! [BucketListItem]))
+        .environmentObject(BucketDataStore(buckets: loadBucketJSON(from: "buckets2023") as! [BucketListItem]))
+        .environmentObject(CarItemStore(cars: loadJSON(from: "carsClean") ))
 }
