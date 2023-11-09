@@ -14,6 +14,7 @@ struct DataView: View
     
     @State private var searchedText : String = ""
     @State private var showAddBucketListItems : Bool = false
+    @State private var showAddCarListItems : Bool = false
     @State private var canShowBuckets : Bool = false
     @State private var canShowCar : Bool = false
     
@@ -111,6 +112,12 @@ struct DataView: View
         {
             AddBucketListItemView(with: "Your name", having: "your goal")
         }
+        .sheet(isPresented: $showAddCarListItems)
+        {
+            AddCarListItemView(with: "Your make", having: "Your model")
+    
+        }
+        
         .listStyle(SidebarListStyle())
 
     
