@@ -127,17 +127,6 @@ struct DataView: View
     {
         bucketData.buckets.remove(atOffsets: offsets)
     }
-    
-    
-    private func showCar()
-    {
-        canShowCar.toggle()
-    }
-    private func showBucket()
-    {
-        canShowBuckets.toggle()
-    }
-    
 }
 
 
