@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct CarItem : Codable, Identifiable
+struct CarItem : Codable
 {
-    var id = UUID()
     var EngineType : String
     var MPG : Int
     var FuelType : String

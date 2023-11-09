@@ -83,11 +83,11 @@ struct DataView: View
                 }
                 Section("Cars", isExpanded: $canShowCar)
                 {
-                    ForEach(filteredCarResult)
+                    ForEach(filteredCarResult.indices, id: \.self)
                     {
-                        car in
+                        index in
                         
-                        CarRowView(rowCar: car, emoji: generateRandomEmoji(of: "Face"))
+                        CarRowView(rowCar: filteredCarResult[index], emoji: generateRandomEmoji(of: "Face"))
                     }
 
                     
@@ -143,5 +143,5 @@ struct DataView: View
 {
     DataView()
         .environmentObject(BucketDataStore(buckets: loadBucketJSON(from: "buckets2023") as! [BucketListItem]))
-        .environmentObject(CarItemStore(cars: loadJSON(from: "carsClean") ))
+        .environmentObject(CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem]))
 }
