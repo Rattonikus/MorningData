@@ -66,11 +66,6 @@ struct DataView: View
         {
             List
             {
-                Section("Settings")
-                {
-                    Button("Show buckts", action: showBucket)
-                    Button("Show cars", action: showCar)
-                }
                 Section("Buckets", isExpanded: $canShowBuckets)
                 {
                     ForEach(filteredBucketListResult)
@@ -116,6 +111,7 @@ struct DataView: View
         {
             AddBucketListItemView(with: "Your name", having: "your goal")
         }
+        .listStyle(SidebarListStyle())
 
     
     }

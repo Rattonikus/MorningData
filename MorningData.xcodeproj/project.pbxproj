@@ -22,6 +22,7 @@
 		7850FD262ADED97F00263E37 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD252ADED97F00263E37 /* Utilities.swift */; };
 		7850FD2A2ADEE3D700263E37 /* CarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7850FD292ADEE3D700263E37 /* CarItem.swift */; };
 		7850FD2C2ADEE43F00263E37 /* carsClean.json in Resources */ = {isa = PBXBuildFile; fileRef = 7850FD2B2ADEE43F00263E37 /* carsClean.json */; };
+		7861CD482AFD302200CC119E /* AddCarListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7861CD472AFD302200CC119E /* AddCarListItemView.swift */; };
 		78DF2D7E2AEFEB9B00FF6EB8 /* BucketDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */; };
 		78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */; };
 		78DF2D822AEFF32200FF6EB8 /* CustomPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */; };
@@ -68,6 +69,7 @@
 		7850FD252ADED97F00263E37 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		7850FD292ADEE3D700263E37 /* CarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarItem.swift; sourceTree = "<group>"; };
 		7850FD2B2ADEE43F00263E37 /* carsClean.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carsClean.json; sourceTree = "<group>"; };
+		7861CD472AFD302200CC119E /* AddCarListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarListItemView.swift; sourceTree = "<group>"; };
 		78DF2D7D2AEFEB9B00FF6EB8 /* BucketDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDataStore.swift; sourceTree = "<group>"; };
 		78DF2D7F2AEFECC500FF6EB8 /* BucketRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketRowView.swift; sourceTree = "<group>"; };
 		78DF2D812AEFF32200FF6EB8 /* CustomPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPDFView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				78DF2D832AEFF34E00FF6EB8 /* CarDetailView.swift */,
 				78DF2D852AEFF35A00FF6EB8 /* CarRowView.swift */,
+				7861CD472AFD302200CC119E /* AddCarListItemView.swift */,
 			);
 			path = "Car View";
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				7850FCEF2ADECEFB00263E37 /* MorningDataApp.swift in Sources */,
 				7850FD2A2ADEE3D700263E37 /* CarItem.swift in Sources */,
 				7850FD262ADED97F00263E37 /* Utilities.swift in Sources */,
+				7861CD482AFD302200CC119E /* AddCarListItemView.swift in Sources */,
 				7850FD242ADED6ED00263E37 /* BucketListItem.swift in Sources */,
 				78DF2D802AEFECC500FF6EB8 /* BucketRowView.swift in Sources */,
 				78DF2D842AEFF34E00FF6EB8 /* CarDetailView.swift in Sources */,
