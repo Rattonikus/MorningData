@@ -12,8 +12,8 @@ struct MorningDataApp: App
 {
     var body: some Scene 
     {
-        @StateObject var storedBuckets = BucketDataStore(buckets: loadBucketJSON(from: "buckets2023") as! [BucketListItem])
-        @StateObject var storedCars = CarItemStore(cars: loadJSON(from: "carsClean") as! [CarItem])
+        @StateObject var storedBuckets = BucketDataStore(buckets: loadBucketJSON(from: "buckets2023") )
+        @StateObject var storedCars = CarItemStore(cars: loadJSON(from: "carsClean") )
         WindowGroup
         {
             DataView()
@@ -22,3 +22,4 @@ struct MorningDataApp: App
         }
     }
 }
+
